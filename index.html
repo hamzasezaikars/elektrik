@@ -209,6 +209,66 @@
       color: #f97316;
     }
 
+    /* GÖRSEL STILLERI */
+    .hero-image {
+      flex: 0.9;
+      text-align: center;
+    }
+    .hero-image img {
+      width: 100%;
+      max-width: 380px;
+      border-radius: 32px;
+      object-fit: cover;
+      box-shadow: 0 20px 35px -8px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+    .hero-image img:hover {
+      transform: scale(1.02);
+    }
+    .service-card img {
+      width: 100%;
+      border-radius: 20px;
+      margin-top: 1rem;
+      border: 1px solid #eef2ff;
+      transition: transform 0.3s ease;
+    }
+    .service-card img:hover {
+      transform: scale(1.02);
+    }
+    .city-map-img {
+      margin-top: 2rem;
+      text-align: center;
+    }
+    .city-map-img img {
+      width: 100%;
+      max-width: 700px;
+      border-radius: 28px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+    .city-map-img img:hover {
+      transform: scale(1.01);
+    }
+    .cta-banner img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 28px;
+      margin: 0 auto 1.5rem auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+    .cta-banner img:hover {
+      transform: scale(1.02);
+    }
+    @media (max-width: 880px) {
+      .hero-image {
+        margin-top: 1.5rem;
+      }
+      .hero-image img {
+        max-width: 280px;
+      }
+    }
+
     /* section genel */
     .section {
       padding: 5rem 0;
@@ -478,9 +538,12 @@
           <h2>Elektrik & Su Tesisatı<br>Profesyonel Çözüm Ortağınız</h2>
           <p>7/24 acil servis, hızlı ekipler, uygun fiyat garantisi. Elektrikten su tesisatına tüm arızalarınız için yanınızdayız.</p>
           <div class="btn-group">
-            <button class="btn-primary" onclick="alert('📞 7/24 hattımız: 0 535 025 58 78| Hemen randevu alın!')"><i class="fas fa-headset"></i> Hizmet Al</button>
+            <button class="btn-primary" onclick="alert('📞 7/24 hattımız: 0 535 025 58 70 | Hemen randevu alın!')"><i class="fas fa-headset"></i> Hizmet Al</button>
             <button class="btn-outline" onclick="window.location.href='#sehirler'"><i class="fas fa-map-marker-alt"></i> Servis Bölgeleri</button>
           </div>
+        </div>
+        <div class="hero-image">
+          <img src= "İmages/100-metrekare-ev-elektrik-tesisati-maliyeti-e1764713789793.jpg" alt="Elektrik tamiri profesyonel ekip">
         </div>
         <div class="hero-stats">
           <div class="stat-item"><div class="stat-number">15+</div><div>Yıl Tecrübe</div></div>
@@ -512,6 +575,7 @@
                 <li><i class="fas fa-check-circle"></i> Klima & Beyaz Eşya Bağlantısı</li>
               </ul>
               <div class="badge-offer"><i class="fas fa-tools"></i> 1 yıl garantili işçilik</div>
+              <img src="İmages/elektrik-tesisatcisi.jpg" alt="Elektrik panosu ve sigorta">
             </div>
           </div>
           <!-- Su Tesisatı + alt detaylar (klozet iç takımı, batarya değişimi, musluk arızası vs) -->
@@ -530,6 +594,7 @@
                 <li><i class="fas fa-check-circle"></i> Şofben & Kombi Bağlantısı</li>
               </ul>
               <div class="badge-offer"><i class="fas fa-clock"></i> Aynı gün servis garantisi</div>
+              <img src="İmages/su-tesisati.png" alt="Su tesisatı tamiri">
             </div>
           </div>
         </div>
@@ -548,6 +613,9 @@
           <div class="city-tag"><i class="fas fa-city"></i> Çayırova</div>
           <div class="city-tag"><i class="fas fa-city"></i> Gebze</div>
         </div>
+        <div class="city-map-img">
+          <img src="https://placehold.co/800x200/0f172a/f97316?text=Kocaeli+%26+Duzce+Hizmet+Bolgesi&font=montserrat" alt="Servis bölgeleri haritası">
+        </div>
         <div style="margin-top: 2rem; text-align: center; background: #ffffff; border-radius: 32px; padding: 1.2rem; border:1px solid #e2e8f0">
           <i class="fas fa-truck-fast" style="color:#f97316; margin-right: 8px;"></i> 
           <strong>Bu bölgelere özel acil ekip:</strong> Düzce, Tuzla, Darıca, Çayırova ve Gebze'de 30 dakika içinde sahadayız!
@@ -558,6 +626,7 @@
     <!-- Ek: Acil Durum / CTA -->
     <div class="container" style="margin-bottom: 1rem;">
       <div class="cta-banner">
+        <img src="İmages/images.png" alt="Teknik ekip arkadaşlar">
         <i class="fas fa-plug" style="font-size: 2.5rem; color: #f97316;"></i>
         <h3>Elektrik & Su tesisatı acil yardım hattı</h3>
         <p>7/24 kesintisiz destek, alanında uzman teknisyenler, sigortalı hizmet. Hemen arayın!</p>
@@ -673,4 +742,3 @@
   </script>
 </body>
 </html>
-<!--.-->
